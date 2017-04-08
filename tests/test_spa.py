@@ -11,7 +11,7 @@ Tests for `spa` module.
 import pytest
 
 
-from spa import spa
+#from spa.middleware import SPAMiddleware
 
 
 @pytest.fixture
