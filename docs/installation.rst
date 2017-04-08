@@ -12,7 +12,7 @@ To install django-spa, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install spa
+    $ pip install django-spa
 
 This is the preferred method to install django-spa, as it will always install the most recent stable release.
 

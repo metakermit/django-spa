@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
-import re
 import os
 
 from django.conf import settings
 from django.urls import resolve
 from django.urls.exceptions import Resolver404
 from whitenoise.middleware import WhiteNoiseMiddleware
+
 
 class SPAMiddleware(WhiteNoiseMiddleware):
     """Adds support for serving a single-page app (SPA)
@@ -18,9 +18,9 @@ class SPAMiddleware(WhiteNoiseMiddleware):
     def process_request(self, request):
         # First try to serve the static files (on /static/ and on /)
         # which is relatively fast as files are stored in a self.files dict
-        if self.autorefresh: # debug mode
+        if self.autorefresh:  # debug mode
             static_file = self.find_file(request.path_info)
-        else: # from the collected static files
+        else:  # from the collected static files
             static_file = self.files.get(request.path_info)
         if static_file is not None:
             return self.serve(static_file, request)
@@ -36,7 +36,7 @@ class SPAMiddleware(WhiteNoiseMiddleware):
                 # redirect all unknown files to the SPA root
                 try:
                     return self.serve(self.spa_root, request)
-                except AttributeError: # no SPA page stored yet
+                except AttributeError:  # no SPA page stored yet
                     self.spa_root = self.find_file('/')
                     if self.spa_root:
                         return self.serve(self.spa_root, request)
@@ -50,8 +50,9 @@ class SPAMiddleware(WhiteNoiseMiddleware):
         directory_indexes = {}
         for url, static_file in self.files.items():
             if url.endswith(index_page_suffix):
-                # For each index file found, add a corresponding URL->content mapping
-                # for the file's parent directory, so that the index page is served for
+                # For each index file found, add a corresponding URL->content
+                # mapping for the file's parent directory,
+                # so that the index page is served for
                 # the bare directory URL ending in '/'.
                 parent_directory_url = url[:-index_name_length]
                 directory_indexes[parent_directory_url] = static_file
