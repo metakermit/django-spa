@@ -9,3 +9,4 @@ Sphinx
 cryptography
 PyYAML
 pytest
+twine
