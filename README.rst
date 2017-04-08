@@ -24,7 +24,7 @@ The following SPA settings are handled in django-spa:
 
 * index.html served on ``/``
 * all ``/static/...`` files served on ``/...``
-*
+* Django's urls still work (Django admin, templates, Django REST framework APIs)
 * everything else goes to ``/`` for frontend routing (e.g. `react-router`_)
 
 Usage
