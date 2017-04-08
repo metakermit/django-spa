@@ -6,23 +6,23 @@ django-spa
 .. image:: https://img.shields.io/pypi/v/spa.svg
         :target: https://pypi.python.org/pypi/spa
 
-.. image:: https://img.shields.io/travis/metakermit/spa.svg
-        :target: https://travis-ci.org/metakermit/spa
+.. image:: https://img.shields.io/travis/metakermit/django-spa.svg
+        :target: https://travis-ci.org/metakermit/django-spa
 
 .. image:: https://readthedocs.org/projects/spa/badge/?version=latest
         :target: https://spa.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-.. image:: https://pyup.io/repos/github/metakermit/spa/shield.svg
-     :target: https://pyup.io/repos/github/metakermit/spa/
+.. image:: https://pyup.io/repos/github/metakermit/django-spa/shield.svg
+     :target: https://pyup.io/repos/github/metakermit/django-spa/
      :alt: Updates
 
 
-Simple Django configuration to serve a single-page app
+Simple Django configuration to serve a single-page app (SPA).
 
 
 * Free software: MIT license
-* Documentation: https://spa.readthedocs.io.
+* Documentation: https://django-spa.readthedocs.io.
 
 
 Features
@@ -33,8 +33,8 @@ Features
 Credits
 ---------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+This package was created with Cookiecutter_
+and the `audreyr/cookiecutter-pypackage`_ project template.
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
-
