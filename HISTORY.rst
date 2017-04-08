@@ -6,3 +6,4 @@ History
 ------------------
 
 * First release on PyPI.
+* Initial django-spa middleware.
