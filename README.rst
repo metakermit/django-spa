@@ -50,6 +50,10 @@ Update *settings.py* with the django-spa middleware::
         'spa.middleware.SPAMiddleware',
     ]
 
+Use the django-spa static file storage::
+
+    STATICFILES_STORAGE = 'spa.storage.SPAStaticFilesStorage'
+
 You should be good to go!
 
 Credits
