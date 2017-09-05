@@ -1,6 +1,6 @@
-===============================
+==========
 django-spa
-===============================
+==========
 
 
 .. image:: https://img.shields.io/pypi/v/django-spa.svg
@@ -18,21 +18,26 @@ django-spa
      :alt: Updates
 
 
-Simple Django configuration to serve a single-page app (SPA).
+Django package to serve a single-page app (SPA).
 
-The following SPA settings are handled in django-spa:
+The following settings that make serving SPAs easier
+are handled in django-spa:
 
-* index.html served on ``/``
-* all ``/static/...`` files served on ``/...``
+* *index.html* served when ``/`` requested
+* all ``/static/…`` files served on ``/…`` as well
 * Django's urls still work (Django admin, templates, Django REST framework APIs)
 * everything else goes to ``/`` for frontend routing (e.g. `react-router`_)
+
+For an example of using django-spa to serve a create-react-app frontend
+that consumes a Django REST framework API, check out Django-REST_.
 
 Usage
 ------
 
 First set up WhiteNoise_, as django-spa overrides some of its functionality.
 
-Add django-spa to your *requirements.txt*::
+Add django-spa to your *requirements.txt*
+and ``pip install -r requirements.txt``::
 
     django-spa
 
@@ -74,4 +79,5 @@ MIT_
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
 .. _`react-router`: https://reacttraining.com/react-router/
+.. _Django-REST: https://github.com/metakermit/generator-django-rest
 .. _MIT: LICENSE
