@@ -6,7 +6,7 @@ django-spa
 .. image:: https://img.shields.io/pypi/v/django-spa.svg
         :target: https://pypi.python.org/pypi/django-spa
 
-.. image:: https://img.shields.io/travis/metakermit/django-spa.svg
+.. image:: https://travis-ci.org/metakermit/django-spa.svg?branch=master
         :target: https://travis-ci.org/metakermit/django-spa
 
 .. image:: https://readthedocs.org/projects/django-spa/badge/?version=latest
@@ -74,7 +74,7 @@ License
 
 MIT_
 
-.. _Whitenoise: https://github.com/evansd/whitenoise/
+.. _Whitenoise: http://whitenoise.evans.io/en/stable/django.html
 .. _`Whitenoise issue`: https://github.com/evansd/whitenoise/issues/12
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
