@@ -4,18 +4,22 @@ django-spa
 
 
 .. image:: https://img.shields.io/pypi/v/django-spa.svg
-        :target: https://pypi.python.org/pypi/django-spa
+    :target: https://pypi.python.org/pypi/django-spa
 
 .. image:: https://travis-ci.org/metakermit/django-spa.svg?branch=master
-        :target: https://travis-ci.org/metakermit/django-spa
+    :target: https://travis-ci.org/metakermit/django-spa
 
 .. image:: https://readthedocs.org/projects/django-spa/badge/?version=latest
-        :target: https://django-spa.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
+    :target: https://django-spa.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
 
 .. image:: https://pyup.io/repos/github/metakermit/django-spa/shield.svg
-     :target: https://pyup.io/repos/github/metakermit/django-spa/
-     :alt: Updates
+    :target: https://pyup.io/repos/github/metakermit/django-spa/
+    :alt: Updates
+
+.. image::  https://img.shields.io/badge/license-MIT-blue.svg
+    :target: https://raw.githubusercontent.com/metakermit/django-spa/master/LICENSE
+    :alt: GitHub license
 
 
 Django package to serve a single-page app (SPA).
@@ -28,11 +32,11 @@ are handled in django-spa:
 * Django's urls still work (Django admin, templates, Django REST framework APIs)
 * everything else goes to ``/`` for frontend routing (e.g. `react-router`_)
 
-For an example of using django-spa to serve a create-react-app frontend
-that consumes a Django REST framework API, check out Django-REST_.
-
 Usage
 ------
+
+For an example of using django-spa to serve a create-react-app frontend
+that consumes a Django REST framework API, check out generator-django-rest_.
 
 First set up WhiteNoise_, as django-spa overrides some of its functionality.
 
@@ -79,5 +83,5 @@ MIT_
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
 .. _`react-router`: https://reacttraining.com/react-router/
-.. _Django-REST: https://github.com/metakermit/generator-django-rest
+.. _generator-django-rest: https://github.com/metakermit/generator-django-rest
 .. _MIT: LICENSE
