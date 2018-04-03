@@ -3,8 +3,8 @@ django-spa
 ==========
 
 
-.. image:: https://img.shields.io/pypi/v/django-spa.svg
-    :target: https://pypi.python.org/pypi/django-spa
+.. image:: https://badge.fury.io/py/django-spa.svg
+    :target: https://badge.fury.io/py/django-spa
 
 .. image:: https://travis-ci.org/metakermit/django-spa.svg?branch=master
     :target: https://travis-ci.org/metakermit/django-spa
