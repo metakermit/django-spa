@@ -18,13 +18,12 @@ deploy:
       TjBMZ3FLdXpNZXR3Vm5VY0haZ0FjSmhXMEJYanlWcWVYaEU0S0FsVGpZeW02L0pTZmtrdGFuazJ6
       K1F0TnNDVUZXWWd5SmZJUXQ1eE14K21aUE5Ic0trWWpJMDNDSWpWY0dUOWhibkFoTEJ1aERnYzg9
   true:
-    condition: $TOXENV == py27
     repo: metakermit/django-spa
     tags: true
-env:
-- TOXENV=py36
-- TOXENV=py27
-install: pip install -U tox
+install:
+  - pip install pipenv
+  - pipenv install
 language: python
-python: 3.6
-script: tox -e ${TOXENV}
+python: 3.7
+script:
+  - pipenv run pytest

@@ -9,8 +9,6 @@ whitenoise = "*"
 [dev-packages]
 bumpversion = "*"
 watchdog = "*"
-"flake8" = "*"
-tox = "*"
 coverage = "*"
 cryptography = "*"
 pytest = "*"
@@ -18,7 +16,7 @@ twine = "*"
 Sphinx = "*"
 PyYAML = "*"
 django = "*"
-django-spa = {editable = true, path = "."}
+django-spa = {editable = true,path = "."}
 ipdb = "*"
 
 [requires]
