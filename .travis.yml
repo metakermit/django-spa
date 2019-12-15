@@ -17,7 +17,8 @@ deploy:
       UTM5RC9JeXpyRE85YkJaWHJuc1czdHgyVXlVNXRCb25DRXlTMkRWL0YwZkZQSUpaaHEzdWcwNi8w
       TjBMZ3FLdXpNZXR3Vm5VY0haZ0FjSmhXMEJYanlWcWVYaEU0S0FsVGpZeW02L0pTZmtrdGFuazJ6
       K1F0TnNDVUZXWWd5SmZJUXQ1eE14K21aUE5Ic0trWWpJMDNDSWpWY0dUOWhibkFoTEJ1aERnYzg9
-  true:
+  skip_cleanup: true
+  on:
     repo: metakermit/django-spa
     tags: true
 install:
