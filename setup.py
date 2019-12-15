@@ -10,7 +10,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'whitenoise==3.2.2'
+    'whitenoise==5.0.1'
 ]
 
 test_requirements = [

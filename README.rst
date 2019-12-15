@@ -38,28 +38,37 @@ Usage
 For an example of using django-spa to serve a create-react-app frontend
 that consumes a Django REST framework API, check out generator-django-rest_.
 
-First set up WhiteNoise_, as django-spa overrides some of its functionality.
+As part of setting up django-spa, you also need to set up WhiteNoise_,
+which we'll summarise here.
 
-Add django-spa to your *requirements.txt*
-and ``pip install -r requirements.txt``::
+First, add ``django-spa`` to your *requirements.txt*
+and ``pip install -r requirements.txt`` (or ``pipenv install django-spa``).
+Whitenoise is installed as a dependency, so no need to specify it extra.
 
-    django-spa
-
-Update *settings.py* with the django-spa middleware::
+Update *settings.py* with the Whitenoise & django-spa middleware::
 
     MIDDLEWARE = [
         'django.middleware.security.SecurityMiddleware',
         'whitenoise.middleware.WhiteNoiseMiddleware',
+        'spa.middleware.SPAMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware',
         'django.middleware.common.CommonMiddleware',
         'django.middleware.csrf.CsrfViewMiddleware',
         'django.contrib.auth.middleware.AuthenticationMiddleware',
         'django.contrib.messages.middleware.MessageMiddleware',
         'django.middleware.clickjacking.XFrameOptionsMiddleware',
-        'spa.middleware.SPAMiddleware',
     ]
 
-Use the django-spa static file storage::
+Disable runserver's static file serving by adding ``runserver_nostatic``
+to the top of your INSTALLED_APPS list::
+
+    INSTALLED_APPS = [
+        'whitenoise.runserver_nostatic',
+        'django.contrib.staticfiles',
+        # ...
+    ]
+
+Set the django-spa static file storage::
 
     STATICFILES_STORAGE = 'spa.storage.SPAStaticFilesStorage'
 

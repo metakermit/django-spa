@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+whitenoise = "*"
+
+[dev-packages]
+bumpversion = "*"
+watchdog = "*"
+"flake8" = "*"
+tox = "*"
+coverage = "*"
+cryptography = "*"
+pytest = "*"
+twine = "*"
+Sphinx = "*"
+PyYAML = "*"
+django = "*"
+django-spa = {editable = true, path = "."}
+ipdb = "*"
+
+[requires]
+python_version = "3.7"

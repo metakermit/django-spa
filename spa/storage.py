@@ -5,8 +5,6 @@ class PatchedManifestStaticFilesStorage(ManifestStaticFilesStorage):
     """
     A static file system storage backend which also saves
     hashed copies of the files it saves.
-
-    Patched for https://github.com/metakermit/django-spa/issues/3
     """
 
     def url_converter(self, *args, **kwargs):
