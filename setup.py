@@ -19,7 +19,7 @@ test_requirements = [
 
 setup(
     name='django-spa',
-    version='0.3.0',
+    version='0.3.1',
     description="Simple Django configuration to serve a single-page app",
     long_description=readme + '\n\n' + history,
     author="Dražen Lučanin",
