@@ -9,6 +9,8 @@ deploy:
     repo: metakermit/django-spa
     branch: master
     tags: true
+  api_key:
+    secure: WTIHlDnK4muaI0oHJTbtGIR/Wr8ENQiePS1/vSCx/rnMtbjRPznQsLYW9gw6TYj4ot+h932AP6mnniPGJwF4mL6wTxrAr9y/oRBv5woX+HenXV46ndz3Yqyx4HtxxANxNoWC08+uYE4FndtkQFTsfCuvbqnIQ29xhif5hmM3+qBkCuMx/cQw0CsvXHTGTQCobkkZ0R8yX/h2vloKCkn4JzNn4h9YThyCT8oDjEQaGQjQvwLSItk+gMR65EY1AROTdp6gYigFugg/rLDE9cCaFrhpl8eCRM48m2LsdLutV5wR4Nk/3m38bjvBDtez/6nFwVMrWU/xmscapCVFDEL5EAR4K/pMf4xIrDeQRxLSTuCJzVBTCm4BDY3eXgqJP9h4zfQJLFK/gFVvWxPZ+8TR9oCzH7SvWN8QBrPrhbLzwjNrwR58Q6WjyyBeYsJ6GPlTH2T7YU2H2BqByw3wep8j0TkgoGhYwIrbOCKQqzald8gfWg1U5KY7IGh5csdDznL4PaHSa8JR4+qyr6VZ6LmEIEAa7AS56D8pM9nJz2edVXLBkjsPuvKr7seInY+o6BET5xiIlPkt28J5rBXP3fShg1fnrJxC0ulLvp6sra26ZeA3ajJBmck1jSLM3GdETX1SUdH85lh6glZKoKtwn7lHVqjChGyHG37MX7m1NJB3QMc=
 install:
 - pip install pipenv
 - pipenv install
