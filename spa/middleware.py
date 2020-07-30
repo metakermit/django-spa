@@ -13,6 +13,7 @@ class SPAMiddleware(WhiteNoiseMiddleware):
     with frontend routing on /
 
     """
+    config_attrs = WhiteNoiseMiddleware.config_attrs + ('index_name',)
     index_name = 'static/index.html'
 
     def process_request(self, request):
