@@ -10,7 +10,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'whitenoise==5.3.0'
+    'whitenoise==6.2.0'
 ]
 
 test_requirements = [
@@ -19,7 +19,7 @@ test_requirements = [
 
 setup(
     name='django-spa',
-    version='0.3.6',
+    version='0.3.7',
     description="Simple Django configuration to serve a single-page app",
     long_description=readme + '\n\n' + history,
     author="Dražen Lučanin",
